@@ -87,9 +87,15 @@ $assembly = [System.Reflection.Assembly]::Load($UncompressedFileBytes)
 
         static void Main(string[] args)
         {
-            
+            string kitty = @"
+             /\_/\  
+            ( o.o ) 
+             > ^ <
+            ";
+            Console.WriteLine(kitty);
+
             if (args.Length < 1)
-            {
+            { 
                 Console.WriteLine("Podaj sciezke do pliku assembly!");
                 return;
             }
